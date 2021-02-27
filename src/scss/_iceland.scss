@@ -1,0 +1,44 @@
+.iceland {
+    display: flex;
+    justify-content: space-between;
+    align-content:space-between;
+    flex-wrap: wrap;
+    background-color: rgb(255, 0, 0);
+}
+
+$white-border: 10px solid #fff;
+$first-width: 90px;
+$second-width: 190px;
+
+.iceland__blue-rect {
+    background-color: #0000ff;
+
+    &:nth-of-type(1) {
+        width: $first-width;
+        height: $first-width;
+        border-right: $white-border;
+        border-bottom: $white-border;
+    }
+
+    &:nth-of-type(2) {
+        width: $second-width;
+        height: $first-width;
+        border-left: $white-border;
+        border-bottom: $white-border;
+    }
+
+    &:nth-of-type(3) {
+        width: $first-width;
+        height: $first-width;
+        border-top: $white-border;
+        border-right: $white-border;
+    }
+
+    &:nth-of-type(4) {
+        width: $second-width;
+        height: $first-width;
+        border-left: $white-border;
+        border-top: $white-border;
+    }
+
+}
